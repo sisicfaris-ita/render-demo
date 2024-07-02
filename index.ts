@@ -5,11 +5,11 @@ config();
 
 const app = express();
 
-app.get("/health", (req, res) => {
+app.get("/health", (req: any, res: any) => {
     res.send("Server working");
 });
 
-app.get("/env", (req, res) => {
+app.get("/env", (req: any, res:any) => {
     res.send("Test value: " + process.env.TEST_VALUE);
 });
 
